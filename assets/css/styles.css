@@ -1,3 +1,23 @@
+:root {
+  /* 🎨 Color Palette */
+  --color-bg: #fefefe;
+  --color-text: #333;
+  --color-accent: #ff6347;
+  --color-accent-hover: #e5533d;
+  --color-muted: #666;
+  --color-dark: #222;
+  --color-light: #ddd;
+
+  /* ✍️ Font Settings */
+  --font-body: 'Arial', sans-serif;
+  --font-heading: 'Arial Black', Gadget, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2.5rem;
+}
+
+
+
 /* Reset some basics */
 * {
     margin: 0;
@@ -19,9 +39,11 @@
   }
 
   .page-wrapper {
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    max-width: 1100px;
+    padding: 0 1rem; /* mobile-friendly side padding */
   }
   
   header {
@@ -73,10 +95,11 @@
   /* Allow main to grow, pushing footer down */
 
 main {
-    max-width: 700px;
-    margin: 1rem auto;
-    margin-top: 5%;
-    flex: 1;
+  width: 100%;
+  flex: 1;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  padding-left: 1rem;
   }
   
   /* Intro section */
