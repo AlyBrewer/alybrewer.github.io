@@ -2,7 +2,7 @@ your-website/
 ├── index.html            # Home page
 ├── photography           # Photography examples and prices 
 ├── projects.html         # Technical + creative projects
-├── study-tools.html      # Flashcards, prints, etc.
+├── study.html      # Flashcards, prints, etc.
 ├── assets/
 │   ├── css/
 │   │   └── styles.css
