@@ -1,0 +1,14 @@
+your-website/
+├── index.html            # Home page
+├── photography           # Photography examples and prices 
+├── projects.html         # Technical + creative projects
+├── study-tools.html      # Flashcards, prints, etc.
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── images/
+│       └── project1.png
+├── js/
+│   └── main.js           # Optional interactivity
+├── resume.pdf            # Downloadable resume
+├── README.md             # Project description for GitHub
