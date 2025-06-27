@@ -1,22 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Space+Grotesk:wght@400;500;700&display=swap');
 :root {
   /* 🎨 Color Palette */
-  --color-bg: #fefefe;
+  --color-bg: #fffaed;
   --color-text: #333;
-  --color-accent: #ff6347;
-  --color-accent-hover: #e5533d;
-  --color-muted: #666;
-  --color-dark: #222;
-  --color-light: #ddd;
+  --color-red: #ff7144;
+  --color-green: #89A377;
+  --color-lightblue: #D8E6FF;
+  --color-yellow: #fbd271;
+  --color-dark: #372516;
+  --color-light: #FFE8d2;
 
   /* ✍️ Font Settings */
-  --font-body: 'Arial', sans-serif;
-  --font-heading: 'Arial Black', Gadget, sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-heading: 'Indie Flower', cursive;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 2.5rem;
 }
-
-
 
 /* Reset some basics */
 * {
@@ -26,10 +27,10 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     line-height: 1.6;
-    background-color: #fefefe;
-    color: #333;
+    background-color: var(--color-bg);
+    color: var(--color-text);
   }
 
   /* Make the whole page a flex column */
@@ -47,7 +48,7 @@
   }
   
   header {
-    background-color: #222;
+    background-color: var(--color-green);
     padding: 1rem 0;
   }
 
@@ -55,13 +56,13 @@
     display: flex;
     justify-content: space-between; /* push items to edges */
     align-items: center;            /* vertically center */
-    background-color: #222;
+    background-color: var(--color-green);
     padding: 1rem 2rem;
   }
   
   /* Home link styling */
   .navbar .logo {
-    color: #ddd;
+    color: var(--color-bg);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
@@ -79,7 +80,7 @@
   }
   
   .nav-list a {
-    color: #ddd;
+    color: var(--color-bg);
     text-decoration: none;
     font-weight: bold;
     padding: 0.25rem 0.5rem;
@@ -88,7 +89,7 @@
   
   .nav-list a:hover,
   .nav-list a.active {
-    color: #ff6347;
+    color: var(--color-red);
   }
   
   /* Center main content and limit width */
@@ -138,18 +139,18 @@ main {
   
   .quick-links li a {
     text-decoration: none;
-    color: #ff6347;
+    color: var(--color-dark);
     font-weight: bold;
     transition: color 0.3s ease;
   }
   
   .quick-links li a:hover {
-    color: #e5533d;
+    color: var(--color-red);
   }
   
   h1, h2 {
     margin-bottom: 1rem;
-    color: #222;
+    color: var(--color-text);
   }
   
   p {
@@ -159,8 +160,9 @@ main {
   .button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #ff6347;
-    color: white;
+    background-color: var(--color-yellow);
+    margin-bottom: 1rem;
+    color: var(--color-dark);
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
@@ -168,7 +170,7 @@ main {
   }
   
   .button:hover {
-    background-color: #e5533d;
+    background-color: var(--color-green);
   }
 
   /* Photography */
@@ -189,15 +191,15 @@ main {
   footer {
     text-align: center;
     padding: 1rem 0;
-    color: #666;
+    color: var(--color-lightblue);
     font-size: 0.9rem;
     margin-top: 3rem;
     width: 100%;
   }
 
   .site-footer {
-    background-color: #222;
-    color: #ddd;
+    background-color: var(--color-green);
+    color: var(--color-bg);
     padding: 1.5rem 1rem;
     font-size: 0.9rem;
     margin-top: 4rem;
@@ -220,13 +222,13 @@ main {
   }
   
   .footer-links a {
-    color: #ff6347;
+    color: var(--color-dark);
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .footer-links a:hover {
-    color: #e5533d;
+    color: var(--color-red);
   }
   
   
