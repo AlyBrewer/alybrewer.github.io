@@ -1,0 +1,56 @@
+.photo-section {
+    padding: 2rem 1rem;
+    background-color: var(--color-bg);
+  }
+  
+  .photo-filter {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .photo-gallery img {
+    max-width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-gallery img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Pricing section */
+  .photo-pricing {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: var(--color-lightblue);
+    border-radius: 12px;
+    max-width: 700px;
+    margin-left: 0%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .photo-pricing h2 {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    color: var(--color-dark);
+  }
+  
+  .photo-pricing ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .photo-pricing li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  

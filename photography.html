@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Photography - Alyssa Brewer</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/photography.css" />
 </head>
 <body>
   <header>
@@ -22,13 +23,40 @@
 <div class="page-wrapper">
   <main>
     <h1>Photography</h1>
-    <p>This page is currently under construction. Soon, I’ll be sharing my favorite photos, camera gear, and photography tips.</p>
-    <p>For now, here’s a quick sample gallery of photos I love:</p>
-    <div class="photo-gallery">
-      <img src="assets/images/image1.jpg" alt="Photo 1" />
-      <img src="assets/images/image2.jpg" alt="Photo 2" />
-      <img src="assets/images/image3.jpg" alt="Photo 3" />
+    <p>Here’s a quick sample gallery of photos I love:</p>
+
+    <div class="photo-filter">
+      <label for="category">Sort by:</label>
+      <select id="category" onchange="filterPhotos(this.value)">
+        <option value="all">All</option>
+        <option value="portraits">Portraits</option>
+        <option value="nature">Nature</option>
+        <option value="events">Events</option>
+        <option value="other">Other</option>
+      </select>
     </div>
+
+    <div class="photo-gallery">
+      <img src="assets/images/image1.jpg" alt="Statue" data-category="other" />
+      <img src="assets/images/image2.jpg" alt="Statue" data-category="other" />
+      <img src="assets/images/statue2.jpeg" alt="Statue" data-category="other" />
+      <img src="assets/images/band1.jpg" alt="Band Photography" data-category="events" />
+      <img src="assets/images/band2.jpg" alt="Band Photography" data-category="events" />
+      <img src="assets/images/band3.jpg" alt="Band Photography" data-category="events" />
+    </div>
+
+    <!-- Pricing Section -->
+<section class="photo-pricing">
+  <h2>Photography Pricing</h2>
+  <p>I’m currently building my portfolio, so my rates are super affordable!</p>
+  <ul>
+    <li><strong>Portrait Session:</strong> $30 - 45 mins, at least 5 edited photos</li>
+    <li><strong>Event Coverage:</strong> $50/hr - all usable shots included</li>
+    <li><strong>Custom Shoots:</strong> Let’s talk! I’m flexible.</li>
+  </ul>
+  <p><em>All shoots include light editing and digital delivery. I’m open to trades or collabs, too!</em></p>
+</section>
+
   </main>
 </div>
   <footer class="site-footer">
@@ -41,5 +69,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="assets/js/photography.js"></script>
 </body>
 </html>
