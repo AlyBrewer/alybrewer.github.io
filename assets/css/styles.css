@@ -26,6 +26,14 @@
   background-size: contain; /* keeps aspect ratio */
 }
 
+.wavy-red {
+  width: 100%;
+  height: 50px; /* height of your wave image */
+  background: url('../images/red-wave.png') center top no-repeat;
+  background-size: contain; /* keeps aspect ratio */
+}
+
+
 /* Reset some basics */
 * {
     margin: 0;
@@ -134,7 +142,7 @@ main {
     gap: 2rem;
     max-width: 900px;
     padding: 2rem;
-    background: var(--color-yellow);
+    background: var(--color-green);
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   }
@@ -162,8 +170,8 @@ main {
   }
   
   .btn {
-    background-color: var(--color-green);
-    color: var(--color-bg);
+    background-color: var(--color-yellow);
+    color: var(--color-dark);
     padding: 0.6rem 1.2rem;
     border-radius: 8px;
     text-decoration: none;
@@ -183,13 +191,13 @@ main {
   }
   
   .profile-pic {
-    width: 200px;
+    width: 300px;
     height: auto;
-    border-top-left-radius: 30%;
+    border-top-left-radius: 10%;
     border-top-right-radius: 10%;
-    border-bottom-right-radius: 30%;
+    border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px var(--color-dark);
     transition: transform 0.3s ease;
     display: block;
   }
