@@ -12,3 +12,13 @@ your-website/
 │   └── main.js           # Optional interactivity
 ├── resume.pdf            # Downloadable resume
 ├── README.md             # Project description for GitHub
+
+
+<section class="quick-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="https://github.com/alybrewer" target="_blank">GitHub</a></li>
+        <li><a href="https://www.etsy.com/shop/yourshop" target="_blank">Etsy Shop</a></li>
+        <li><a href="https://ko-fi.com/yourpage" target="_blank">Support Me on Ko-fi</a></li>
+      </ul>
+    </section>

@@ -19,6 +19,13 @@
   --font-size-xl: 2.5rem;
 }
 
+.wavy-line {
+  width: 100%;
+  height: 50px; /* height of your wave image */
+  background: url('../images/wavy-line.png') center top no-repeat;
+  background-size: contain; /* keeps aspect ratio */
+}
+
 /* Reset some basics */
 * {
     margin: 0;
@@ -50,6 +57,8 @@
   header {
     background-color: var(--color-green);
     padding: 1rem 0;
+    font-family: var(--font-heading);
+    font-size: x-large;
   }
 
   .navbar {
@@ -95,6 +104,22 @@
   /* Center main content and limit width */
   /* Allow main to grow, pushing footer down */
 
+  .navbar .logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-bg);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar .logo:hover {
+    transform: scale(1.05) rotate(-1deg);
+    color: var(--color-yellow); /* or another standout accent */
+  }
+  
+
 main {
   width: 100%;
   flex: 1;
@@ -103,15 +128,70 @@ main {
   padding-left: 1rem;
   }
   
-  /* Intro section */
-  .intro {
-    margin-bottom: 2rem;
+  .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    padding: 2rem;
+    background: var(--color-yellow);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   }
   
-  .intro h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2.5rem;
-    line-height: 1.1;
+  .card-text {
+    flex: 1;
+  }
+  
+  .card-text h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+  }
+  
+  .card-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+  }
+  
+  .card-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    background-color: var(--color-green);
+    color: var(--color-bg);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-red);
+  }
+  
+  .card-image img {
+    width: 250px;
+    border-radius: 25% 5% 25% 5%; /* nice organic curve */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: auto;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 10%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: block;
   }
   
   .intro p {
@@ -155,6 +235,10 @@ main {
   
   p {
     margin-bottom: 1rem;
+  }
+
+  main li {
+    margin-left: 1rem;
   }
   
   .button {
