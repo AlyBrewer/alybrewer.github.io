@@ -28,6 +28,26 @@
       <h1>Contact Me</h1>
     </section>
 
+    <form id="contact-form">
+      <label>
+        Name:
+        <input type="text" name="from_name" required />
+      </label><br>
+      <label>
+        Email:
+        <input type="email" name="reply_to" required />
+      </label><br>
+      <label>
+        Message:
+        <textarea name="message" required></textarea>
+      </label><br>
+      <button type="submit">Send</button>
+    </form>
+    <div id="form-response"></div>
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="assets/js/email.js"></script>
+
     <section class="quick-links">
       <h2>Quick Links</h2>
       <ul>
@@ -44,6 +64,7 @@
       <p>© 2025 Alyssa Brewer</p>
       <div class="footer-links">
         <a href="https://github.com/alybrewer" target="_blank">GitHub</a>
+        <a href="https://substack.com/@galacticaly" target="_blank">Substack</a>
         <a href="https://www.etsy.com/shop/FruitBasketDesign" target="_blank">Etsy</a>
         <a href="https://ko-fi.com/yourpage" target="_blank">Ko-fi</a>
       </div>
