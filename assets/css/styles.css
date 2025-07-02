@@ -153,6 +153,7 @@ main {
     align-items: center;
     gap: 2rem;
     max-width: 900px;
+    min-height: 30rem;
     padding: 2rem;
     background: var(--color-green);
     border-radius: 20px;
